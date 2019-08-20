@@ -78,6 +78,7 @@ button#rainbow {
 }
 .box {
   transition: all 1s;
+  user-select: none;
 }
 
 /* Right Panel */
