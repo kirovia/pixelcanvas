@@ -64,6 +64,11 @@ button#magenta {
 button#white {
   background: white;
 }
+button#rainbow {
+  background: url('./rainbow.png');
+  background-size: cover;
+  background-position: center;
+}
 
 /* Center Panel */
 #center {
@@ -89,3 +94,5 @@ button#donate {
   width: 100px;
   box-shadow: 7px 7px gray;
 }
+
+/* Mobile functionality */

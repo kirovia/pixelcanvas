@@ -35,6 +35,9 @@ document.getElementById('magenta').addEventListener('click', function() {
 document.getElementById('white').addEventListener('click', function() {
   color = 'white';
 });
+document.getElementById('rainbow').addEventListener('click', function() {
+  color = 'default';
+});
 
 // Sensing mouse movements
 pixel.forEach(function(pixel) {
@@ -45,9 +48,15 @@ pixel.forEach(function(pixel) {
 
 pixel.forEach(function(pixel) {
   pixel.addEventListener('mousemove', function() {
-    if (drawing === true) {
+    if (drawing === true && color === 'default') {
+      var r = Math.floor(Math.random() * 255);
+      var g = Math.floor(Math.random() * 255);
+      var b = Math.floor(Math.random() * 255);
+      var rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+      pixel.style.backgroundColor = rgb;
+    } else if (drawing === true && color !== 'default') {
       pixel.style.backgroundColor = color;
-    }
+    };
   });
 });
 
