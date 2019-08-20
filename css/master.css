@@ -65,7 +65,7 @@ button#white {
   background: white;
 }
 button#rainbow {
-  background: url('./rainbow.png');
+  background: url('../images/rainbow.png');
   background-size: cover;
   background-position: center;
 }
