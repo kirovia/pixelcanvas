@@ -7,7 +7,12 @@ var drawing = false;
 // Variable for color select
 var color = 'default'
 
+var select = document.getElementsByTagName('button');
+
 // Color selection
+document.getElementById('rainbow').addEventListener('click', function() {
+  color = 'default';
+});
 document.getElementById('black').addEventListener('click', function() {
   color = 'black';
 });
@@ -34,9 +39,6 @@ document.getElementById('magenta').addEventListener('click', function() {
 });
 document.getElementById('white').addEventListener('click', function() {
   color = 'white';
-});
-document.getElementById('rainbow').addEventListener('click', function() {
-  color = 'default';
 });
 
 // Sensing mouse movements
